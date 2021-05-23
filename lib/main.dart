@@ -12,6 +12,7 @@ class FlashChat extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
         textTheme: TextTheme(
+          // ignore: deprecated_member_use
           body1: TextStyle(color: Colors.black54),
         ),
       ),
