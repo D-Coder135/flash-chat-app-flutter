@@ -75,11 +75,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     //Go to registration screen.
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return RegistrationScreen();
-                        },
-                      ),
+                      // MaterialPageRoute(
+                      //   builder: (context) {
+                      //     return RegistrationScreen();
+                      //   },
+                      // ),
                     );
                   },
                   minWidth: 200.0,
