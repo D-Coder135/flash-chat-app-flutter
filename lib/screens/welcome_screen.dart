@@ -47,7 +47,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Go to login screen.
-                    Navigator.push(
+                    Navigator.pushNamed(
                       context,
                     );
                   },
