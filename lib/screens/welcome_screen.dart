@@ -49,11 +49,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     //Go to login screen.
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return LoginScreen();
-                        },
-                      ),
                     );
                   },
                   minWidth: 200.0,
