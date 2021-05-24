@@ -36,6 +36,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
         // When the forward() animation is completed, then the value of status parameter is equal to AnimationStatus.completed.
         controller.reverse(from: 1.0);
       } else if (status == AnimationStatus.dismissed) {
+        // When the reverse() animation is completed, then the value of status parameter is equal to AnimationStatus.dismissed.
         controller.forward();
       }
       // print(status);
