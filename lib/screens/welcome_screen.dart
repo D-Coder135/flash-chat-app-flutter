@@ -14,7 +14,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
   }
 
