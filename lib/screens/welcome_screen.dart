@@ -37,7 +37,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       } else if (status == AnimationStatus.dismissed) {
         controller.forward();
       }
-      print(status);
+      // print(status);
     }); // This method tells you the status for both the forward and reverse animation. It updates the parameter status with a value when the animation is successfully completed.
 
     controller.addListener(() {
