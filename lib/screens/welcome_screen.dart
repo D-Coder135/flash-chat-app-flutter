@@ -31,6 +31,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       setState(() {});
     });
     // print(controller.value);
+    print(animation.value);
   }
 
   @override
