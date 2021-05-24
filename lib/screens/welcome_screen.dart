@@ -30,6 +30,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     //     from:
     //         1.0); // We you want you animation to grow from large to small i.e. in opposite or reverse order.
 
+    controller.addStatusListener((status) {});
+
     controller.addListener(() {
       setState(() {
         print(animation.value);
