@@ -19,7 +19,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     super.initState();
     controller = AnimationController(
       duration: Duration(seconds: 1),
-      // upperBound: 100.0,
+      // upperBound: 100.0, When using the CurvedAnimation class, then the upperBound property should not be used.
       vsync: this, // Here 'this' refers to the class _WelcomeScreenState.
     );
 
