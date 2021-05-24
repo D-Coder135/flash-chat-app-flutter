@@ -32,7 +32,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
 
     controller.addStatusListener((status) {
       print(status);
-    });
+    }); // This method tells you the status for both the forward and reverse animation. It updates the parameter status with a value when the animation is successfully completed.
 
     controller.addListener(() {
       setState(() {
