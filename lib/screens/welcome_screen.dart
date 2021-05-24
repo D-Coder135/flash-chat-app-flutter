@@ -20,6 +20,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       duration: Duration(seconds: 1),
       vsync: this, // Here 'this' refers to the class _WelcomeScreenState
     );
+
+    controller.forward();
   }
 
   @override
