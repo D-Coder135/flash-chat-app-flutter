@@ -33,6 +33,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     controller.addStatusListener((status) {
       // If we want to loop over our animation i.e. the animation should grow large and then small and then again large and so on =>
       if (status == AnimationStatus.completed) {
+        // When the forward() animation is completed, then the value of status parameter is equal to AnimationStatus.completed.
         controller.reverse(from: 1.0);
       } else if (status == AnimationStatus.dismissed) {
         controller.forward();
