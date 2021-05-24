@@ -26,9 +26,9 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     animation = CurvedAnimation(parent: controller, curve: Curves.bounceOut);
 
     // controller.forward();
-    controller.reverse(
-        from:
-            1.0); // We you want you animation to grow from large to small i.e. in opposite or reverse order.
+    // controller.reverse(
+    //     from:
+    //         1.0); // We you want you animation to grow from large to small i.e. in opposite or reverse order.
 
     controller.addListener(() {
       setState(() {
