@@ -28,10 +28,11 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     controller.forward();
 
     controller.addListener(() {
-      setState(() {});
+      setState(() {
+        print(animation.value);
+      });
     });
     // print(controller.value);
-    print(animation.value);
   }
 
   @override
