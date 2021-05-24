@@ -23,6 +23,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       vsync: this, // Here 'this' refers to the class _WelcomeScreenState.
     );
 
+    animation = CurvedAnimation(parent: controller, curve: Curves.bounceOut);
+
     controller.forward();
 
     controller.addListener(() {
