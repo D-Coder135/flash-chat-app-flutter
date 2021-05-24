@@ -50,6 +50,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     // print(controller.value);
   }
 
+  // Whenever you are using the AnimationController() widget then you must override the dispose() method and call the dispose method by using the object field (here: controller) so that after the page is disposed the animation also gets disposed and don't hog/occupy all the resources
   @override
   void dispose() {
     super.dispose();
