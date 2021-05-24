@@ -13,6 +13,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   AnimationController controller;
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
