@@ -15,6 +15,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   void initState() {
     super.initState();
+    controller = AnimationController(
+      duration: Duration(seconds: 1),
+    );
   }
 
   @override
