@@ -25,6 +25,9 @@ class _WelcomeScreenState extends State<WelcomeScreen>
 
     // animation = CurvedAnimation(parent: controller, curve: Curves.bounceOut);
 
+    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
+        .animate(controller);
+
     controller.forward();
     // controller.reverse(
     //     from:
