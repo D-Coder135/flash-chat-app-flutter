@@ -12,7 +12,9 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final _auth = FirebaseAuth.instance;
 
-  void getCurrentUser() {}
+  void getCurrentUser() {
+    final user = _auth.currentUser;
+  }
 
   @override
   Widget build(BuildContext context) {
