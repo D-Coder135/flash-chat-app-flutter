@@ -35,6 +35,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 //Do something with the user input.
               },
               decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.grey[350],
                 hintText: 'Enter your email',
                 hintStyle: TextStyle(color: Colors.grey),
                 contentPadding:
