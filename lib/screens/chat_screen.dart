@@ -65,6 +65,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       decoration: kMessageTextFieldDecoration,
                     ),
                   ),
+                  // ignore: deprecated_member_use
                   FlatButton(
                     onPressed: () {
                       //Implement send functionality.
