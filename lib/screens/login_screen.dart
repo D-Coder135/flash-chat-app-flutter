@@ -35,6 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 //Do something with the user input.
               },
               decoration: InputDecoration(
+                filled: true,
                 hintText: 'Enter your email',
                 hintStyle: TextStyle(
                   color: Colors.grey,
