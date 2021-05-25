@@ -106,8 +106,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 child: MaterialButton(
                   onPressed: () async {
                     //Implement registration functionality.
-                    final newUser = await _auth.createUserWithEmailAndPassword(
-                        email: email, password: password);
+                    try {
+                      final newUser =
+                          await _auth.createUserWithEmailAndPassword(
+                              email: email, password: password);
+                    } catch (exception) {
+                      print(exception);
+                    }
                   },
                   minWidth: 200.0,
                   height: 42.0,
