@@ -8,6 +8,8 @@ class RegistrationScreen extends StatefulWidget {
 }
 
 class _RegistrationScreenState extends State<RegistrationScreen> {
+  String email;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,6 +66,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 //Do something with the user input.
               },
               decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.grey[350],
                 hintText: 'Enter your password',
                 hintStyle: TextStyle(
                   color: Colors.grey,
