@@ -106,6 +106,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Implement registration functionality.
+                    final newUser = _auth.createUserWithEmailAndPassword(
+                        email: email, password: password);
                   },
                   minWidth: 200.0,
                   height: 42.0,
