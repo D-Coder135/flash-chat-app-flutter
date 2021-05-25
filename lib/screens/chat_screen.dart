@@ -15,10 +15,14 @@ class _ChatScreenState extends State<ChatScreen> {
   var loggedInUser;
 
   void getCurrentUser() async {
-    final user = await _auth.currentUser;
-    if (user != null) {
-      loggedInUser = user;
-      print(loggedInUser);
+    try {
+      final user = await _auth.currentUser;
+      if (user != null) {
+        loggedInUser = user;
+        print(loggedInUser);
+      }
+    } catch (exception) {
+      print(exception);
     }
   }
 
