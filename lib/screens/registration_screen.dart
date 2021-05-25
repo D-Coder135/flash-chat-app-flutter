@@ -1,3 +1,4 @@
+import 'package:flash_chat/screens/chat_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -110,7 +111,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       final newUser =
                           await _auth.createUserWithEmailAndPassword(
                               email: email, password: password);
-                      if (newUser != null) {}
+                      if (newUser != null) {
+                        Navigator.pushNamed(context, ChatScreen.id);
+                      }
                     } catch (exception) {
                       print(exception);
                     }
