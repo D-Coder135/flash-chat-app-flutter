@@ -70,7 +70,9 @@ class _ChatScreenState extends State<ChatScreen> {
                 if (snapshot.hasData) {
                   final messages = snapshot.data.docs;
                   List<Text> messageWidegtsList = [];
-                  for (var message in messages) {}
+                  for (var message in messages) {
+                    final messageText = message.get('text');
+                  }
                 }
               },
             ),
