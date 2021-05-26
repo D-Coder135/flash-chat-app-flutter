@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flash_chat/screens/chat_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -115,7 +116,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       final loggedInUser =
                           await _auth.signInWithEmailAndPassword(
                               email: email, password: password);
-                      if (loggedInUser != null) {}
+                      if (loggedInUser != null) {
+                        Navigator.pushNamed(context, ChatScreen.id);
+                      }
                     } catch (exception) {
                       print(exception);
                     }
