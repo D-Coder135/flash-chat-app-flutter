@@ -71,7 +71,12 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                   // ignore: deprecated_member_use
                   FlatButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      _firestore.collection('messages').add({
+                        'text': messageText,
+                        'sender': loggedInUser.email,
+                      });
+                    },
                     child: Text(
                       'Send',
                       style: kSendButtonTextStyle,
