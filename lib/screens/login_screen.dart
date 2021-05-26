@@ -109,7 +109,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 borderRadius: BorderRadius.all(Radius.circular(30.0)),
                 elevation: 5.0,
                 child: MaterialButton(
-                  onPressed: () {
+                  onPressed: () async {
                     //Implement login functionality.
                     final loggedInUser = _auth.signInWithEmailAndPassword(
                         email: email, password: password);
