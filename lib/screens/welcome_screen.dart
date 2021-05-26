@@ -26,7 +26,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
 
     // animation = CurvedAnimation(parent: controller, curve: Curves.bounceOut);
 
-    animation = ColorTween(begin: Colors.blueGrey[100], end: Colors.white).animate(
+    animation = ColorTween(begin: Colors.blueGrey[100], end: Colors.black).animate(
         controller); // This animation type is used to add a color transition type animation.
 
     controller.forward();
