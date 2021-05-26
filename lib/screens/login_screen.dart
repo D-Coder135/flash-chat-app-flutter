@@ -70,6 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
               textAlign: TextAlign.center,
               onChanged: (value) {
                 //Do something with the user input.
+                password = value;
               },
               decoration: InputDecoration(
                 filled: true,
