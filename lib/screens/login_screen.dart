@@ -112,7 +112,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 elevation: 5.0,
                 child: MaterialButton(
                   onPressed: () async {
-                    setState(() {});
+                    setState(() {
+                      isSpinning = true;
+                    });
                     try {
                       final loggedInUser =
                           await _auth.signInWithEmailAndPassword(
