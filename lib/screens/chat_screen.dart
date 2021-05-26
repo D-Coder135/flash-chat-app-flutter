@@ -27,7 +27,9 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  void messagesStream() async {}
+  void messagesStream() async {
+    _firestore.collection('messages').snapshots()
+  }
 
   @override
   void initState() {
