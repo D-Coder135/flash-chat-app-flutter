@@ -80,8 +80,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   password = value;
                 },
                 decoration: InputDecoration(
-                  filled: true,
-                  fillColor: Colors.grey[350],
+                  // filled: true,
+                  // fillColor: Colors.grey[350],
                   hintText: 'Enter your password.',
                   hintStyle: TextStyle(
                     color: Colors.grey,
