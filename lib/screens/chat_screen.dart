@@ -72,6 +72,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   List<Text> messageWidegtsList = [];
                   for (var message in messages) {
                     final messageText = message.get('text');
+                    final messageSender = message.get('sender');
                   }
                 }
               },
