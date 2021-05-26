@@ -112,7 +112,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 elevation: 5.0,
                 child: MaterialButton(
                   onPressed: () async {
-                    //Implement login functionality.
                     try {
                       final loggedInUser =
                           await _auth.signInWithEmailAndPassword(
