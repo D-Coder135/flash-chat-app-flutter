@@ -63,7 +63,9 @@ class _ChatScreenState extends State<ChatScreen> {
                 children: <Widget>[
                   Expanded(
                     child: TextField(
-                      onChanged: (value) {},
+                      onChanged: (value) {
+                        messageText = value;
+                      },
                       decoration: kMessageTextFieldDecoration,
                     ),
                   ),
