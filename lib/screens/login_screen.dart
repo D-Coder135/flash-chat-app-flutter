@@ -115,6 +115,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       final loggedInUser =
                           await _auth.signInWithEmailAndPassword(
                               email: email, password: password);
+                      if (loggedInUser != null) {}
                     } catch (exception) {
                       print(exception);
                     }
