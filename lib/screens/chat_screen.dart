@@ -69,6 +69,7 @@ class _ChatScreenState extends State<ChatScreen> {
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   final messages = snapshot.data.docs;
+                  List<Text> messageWidegtsList = [];
                 }
               },
             ),
