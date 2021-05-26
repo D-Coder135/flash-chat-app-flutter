@@ -73,6 +73,8 @@ class _ChatScreenState extends State<ChatScreen> {
                   for (var message in messages) {
                     final messageText = message.get('text');
                     final messageSender = message.get('sender');
+                    final messageWidget =
+                        Text('$messageText from $messageSender');
                   }
                 }
               },
