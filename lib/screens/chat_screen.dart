@@ -67,7 +67,9 @@ class _ChatScreenState extends State<ChatScreen> {
             StreamBuilder<QuerySnapshot>(
               stream: _firestore.collection('messages').snapshots(),
               builder: (context, snapshot) {
-                if (snapshot.hasData) {}
+                if (snapshot.hasData) {
+                  final messages = snapshot.data.docs;
+                }
               },
             ),
             Container(
