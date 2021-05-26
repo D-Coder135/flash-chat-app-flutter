@@ -66,6 +66,7 @@ class _ChatScreenState extends State<ChatScreen> {
           children: <Widget>[
             StreamBuilder(
               stream: _firestore.collection('messages').snapshots(),
+              builder: (context, snapshot) {},
             ),
             Container(
               decoration: kMessageContainerDecoration,
