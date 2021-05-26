@@ -14,6 +14,7 @@ class _ChatScreenState extends State<ChatScreen> {
   final _firestore = FirebaseFirestore.instance;
   final _auth = FirebaseAuth.instance;
   var loggedInUser;
+  String messageText;
 
   void getCurrentUser() async {
     try {
