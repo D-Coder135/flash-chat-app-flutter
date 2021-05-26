@@ -69,8 +69,8 @@ class _ChatScreenState extends State<ChatScreen> {
               builder: (context, snapshot) {
                 if (!snapshot.hasData) {
                   return CircularProgressIndicator(
-
-                  )
+                    backgroundColor: Colors.lightBlueAccent,
+                  );
                 }
                 final messages = snapshot.data.docs;
                 List<Text> messageWidegtsList = [];
