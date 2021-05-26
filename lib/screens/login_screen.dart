@@ -111,8 +111,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: MaterialButton(
                   onPressed: () async {
                     //Implement login functionality.
-                    final loggedInUser = await _auth.signInWithEmailAndPassword(
-                        email: email, password: password);
+                    try {
+                      final loggedInUser =
+                          await _auth.signInWithEmailAndPassword(
+                              email: email, password: password);
+                    } catch (exception) {
+                      print(exception);
+                    }
                   },
                   minWidth: 200.0,
                   height: 42.0,
