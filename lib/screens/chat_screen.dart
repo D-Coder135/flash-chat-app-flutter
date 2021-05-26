@@ -27,7 +27,7 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  void messagesStream() {}
+  void messagesStream() async {}
 
   @override
   void initState() {
