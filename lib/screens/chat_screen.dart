@@ -142,6 +142,7 @@ class MessageBubble extends StatelessWidget {
         children: <Widget>[
           Text(
             sender,
+            style: TextStyle(),
           ),
           Material(
             borderRadius: BorderRadius.circular(40.0),
