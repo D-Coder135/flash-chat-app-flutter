@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 final _firestore = FirebaseFirestore.instance;
+var loggedInUser;
 
 class ChatScreen extends StatefulWidget {
   static const String id = 'Chat_Screen';
@@ -15,7 +16,6 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final textFieldController = TextEditingController();
   final _auth = FirebaseAuth.instance;
-  var loggedInUser;
   String messageText;
 
   void getCurrentUser() async {
