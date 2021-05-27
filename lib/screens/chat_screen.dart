@@ -128,6 +128,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
 class MessageBubble extends StatelessWidget {
   final String text;
+  final String sender;
 
   @override
   Widget build(BuildContext context) {
