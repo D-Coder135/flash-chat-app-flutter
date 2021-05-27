@@ -127,8 +127,6 @@ class _ChatScreenState extends State<ChatScreen> {
 }
 
 class MessageBubble extends StatelessWidget {
-  const MessageBubble({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container();
