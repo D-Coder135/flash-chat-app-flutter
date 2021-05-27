@@ -150,7 +150,7 @@ class MessageBubble extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
               child: Text(
-                '$text from $sender',
+                text,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 15.0,
