@@ -140,6 +140,7 @@ class MessageBubble extends StatelessWidget {
       padding: EdgeInsets.all(10.0),
       child: Material(
         color: Colors.lightBlueAccent,
+        elevation: 5.0,
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
           child: Text(
