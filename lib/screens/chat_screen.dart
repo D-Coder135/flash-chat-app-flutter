@@ -73,7 +73,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   );
                 }
                 final messages = snapshot.data.docs;
-                List<Text> messageBubblesList = [];
+                List<MessageBubble> messageBubblesList = [];
                 for (var message in messages) {
                   final messageText = message.get('text');
                   final messageSender = message.get('sender');
