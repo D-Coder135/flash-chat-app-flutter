@@ -137,6 +137,7 @@ class MessageBubble extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
+      padding: EdgeInsets.all(10.0),
       child: Material(
         color: Colors.lightBlueAccent,
         child: Text(
