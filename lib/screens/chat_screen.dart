@@ -81,7 +81,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       Text('$messageText from $messageSender');
                   messageWidgetsList.add(messageWidget);
                 }
-                return Column(
+                return ListView(
                   children: messageWidgetsList,
                 );
               },
