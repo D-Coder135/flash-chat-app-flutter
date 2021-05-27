@@ -138,20 +138,24 @@ class MessageBubble extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(10.0),
-      child: Material(
-        borderRadius: BorderRadius.circular(40.0),
-        color: Colors.lightBlueAccent,
-        elevation: 5.0,
-        child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-          child: Text(
-            '$text from $sender',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 15.0,
+      child: Column(
+        children: [
+          Material(
+            borderRadius: BorderRadius.circular(40.0),
+            color: Colors.lightBlueAccent,
+            elevation: 5.0,
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+              child: Text(
+                '$text from $sender',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 15.0,
+                ),
+              ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }
