@@ -105,7 +105,33 @@ class MessageStream extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return StreamBuilder<QuerySnapshot>(
+      stream: _firestore.collection('messages').snapshots(),
+      builder: (context, snapshot) {
+        if (!snapshot.hasData) {
+          return CircularProgressIndicator(
+            backgroundColor: Colors.lightBlueAccent,
+          );
+        }
+        final messages = snapshot.data.docs;
+        List<MessageBubble> messageBubblesList = [];
+        for (var message in messages) {
+          final messageText = message.get('text');
+          final messageSender = message.get('sender');
+          final messageBubble = MessageBubble(
+            sender: messageSender,
+            text: messageText,
+          );
+          messageBubblesList.add(messageBubble);
+        }
+        return Expanded(
+          child: ListView(
+            padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
+            children: messageBubblesList,
+          ),
+        );
+      },
+    );
   }
 }
 
