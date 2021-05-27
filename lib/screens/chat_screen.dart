@@ -134,6 +134,10 @@ class MessageBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('$text from $sender');
+    return Material(
+      child: Text(
+        '$text from $sender',
+      ),
+    );
   }
 }
