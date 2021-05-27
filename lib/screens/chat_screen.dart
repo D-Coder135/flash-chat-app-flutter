@@ -149,6 +149,7 @@ class MessageStream extends StatelessWidget {
 class MessageBubble extends StatelessWidget {
   final String text;
   final String sender;
+  final bool isMe;
 
   MessageBubble({this.text, this.sender});
 
