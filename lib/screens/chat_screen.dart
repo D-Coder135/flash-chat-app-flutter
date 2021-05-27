@@ -98,8 +98,6 @@ class _ChatScreenState extends State<ChatScreen> {
 }
 
 class MessageStream extends StatelessWidget {
-  const MessageStream({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
