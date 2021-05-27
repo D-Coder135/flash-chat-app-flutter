@@ -77,11 +77,11 @@ class _ChatScreenState extends State<ChatScreen> {
                 for (var message in messages) {
                   final messageText = message.get('text');
                   final messageSender = message.get('sender');
-                  final messageWidget = MessageBubble(
+                  final messageBubble = MessageBubble(
                     sender: messageSender,
                     text: messageText,
                   );
-                  messageWidgetsList.add(messageWidget);
+                  messageWidgetsList.add(messageBubble);
                 }
                 return Expanded(
                   child: ListView(
