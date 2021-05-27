@@ -130,6 +130,8 @@ class MessageBubble extends StatelessWidget {
   final String text;
   final String sender;
 
+  MessageBubble({this.text, this.sender});
+
   @override
   Widget build(BuildContext context) {
     return Container();
