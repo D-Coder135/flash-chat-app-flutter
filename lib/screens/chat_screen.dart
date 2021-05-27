@@ -29,14 +29,6 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  // void messagesStream() async {
-  //   await for (var snapshot in _firestore.collection('messages').snapshots()) {
-  //     for (var message in snapshot.docs) {
-  //       print(message.data);
-  //     }
-  //   }
-  // }
-
   @override
   void initState() {
     super.initState();
@@ -124,10 +116,6 @@ class MessageStream extends StatelessWidget {
           final messageText = message.get('text');
           final messageSender = message.get('sender');
           final currentUser = loggedInUser.email;
-
-          // if (currentUser == messageSender) {
-          //   // Then the message is send from the logged in user.
-          // }
 
           final messageBubble = MessageBubble(
             sender: messageSender,
