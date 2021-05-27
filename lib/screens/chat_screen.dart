@@ -81,6 +81,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     sender: messageSender,
                     text: messageText,
                   );
+                  messageWidgetsList.add(messageWidget);
                 }
                 return Expanded(
                   child: ListView(
