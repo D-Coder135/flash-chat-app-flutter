@@ -128,6 +128,15 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 }
 
+class MessageStream extends StatelessWidget {
+  const MessageStream({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
 class MessageBubble extends StatelessWidget {
   final String text;
   final String sender;
