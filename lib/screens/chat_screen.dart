@@ -118,7 +118,7 @@ class MessageStream extends StatelessWidget {
             backgroundColor: Colors.lightBlueAccent,
           );
         }
-        final messages = snapshot.data.docs;
+        final messages = snapshot.data.docs.reversed;
         List<MessageBubble> messageBubblesList = [];
         for (var message in messages) {
           final messageText = message.get('text');
