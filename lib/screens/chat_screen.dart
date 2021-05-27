@@ -73,7 +73,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   );
                 }
                 final messages = snapshot.data.docs;
-                List<Text> messageWidgetsList = [];
+                List<Text> messageBubblesList = [];
                 for (var message in messages) {
                   final messageText = message.get('text');
                   final messageSender = message.get('sender');
@@ -81,13 +81,13 @@ class _ChatScreenState extends State<ChatScreen> {
                     sender: messageSender,
                     text: messageText,
                   );
-                  messageWidgetsList.add(messageBubble);
+                  messageBubblesList.add(messageBubble);
                 }
                 return Expanded(
                   child: ListView(
                     padding:
                         EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
-                    children: messageWidgetsList,
+                    children: messageBubblesList,
                   ),
                 );
               },
